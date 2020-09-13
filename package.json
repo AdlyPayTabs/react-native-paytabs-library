@@ -1,9 +1,10 @@
 {
   "name": "react-native-paytabs-library",
-  "title": "React Native Paytabs Library",
-  "version": "1.0.0",
-  "description": "TODO",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "version": "1.0.8",
+  "description": "Paytabs react native library",
   "main": "index.js",
+  "title": "React Native Paytabs Library",
   "files": [
     "README.md",
     "android",
@@ -16,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-paytabs-library.git",
-    "baseUrl": "https://github.com/github_account/react-native-paytabs-library"
+    "url": "https://github.com/AdlyPayTabs/react-native-paytabs-library.git",
+    "baseUrl": "https://github.com/AdlyPayTabs/react-native-paytabs-library"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Mohamed Adly",
+    "email": "m.adly@paytabs.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

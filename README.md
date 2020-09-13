@@ -3,34 +3,34 @@
 ![Version](https://img.shields.io/badge/Paytabs%20React%20Native%20library-v1.0.7-green)
 ## Getting started
 
-`$ npm install @paytabscom/react-native-paytabs-library@1.0.7 --save`
+`$ npm install react-native-paytabs-library@1.0.8 --save`
 
 ### Step 1: Link Library
 
-`$ react-native link @paytabscom/react-native-paytabs-library@1.0.7`
+`$ react-native link react-native-paytabs-library@1.0.8`
 
 OR Manual installation
 
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `@paytabscom/react-native-paytabs-library` and add `RNPaytabsLibrary.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNPaytabsLibrary.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+2. Go to `node_modules` ➜ `react-native-paytabs-library` and add `PTPaytabsLibrary.xcodeproj`
+3. In XCode, in the project navigator, select your project. Add `libPTPaytabsLibrary.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNPaytabsLibraryPackage;` to the imports at the top of the file
-  - Add `new RNPaytabsLibraryPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.paytabs.PTPaytabsLibraryPackage;` to the imports at the top of the file
+  - Add `new PTPaytabsLibraryPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```groovy
-  	include ':@paytabscom/react-native-paytabs-library@1.0.7'
-  	project(':@paytabscom/react-native-paytabs-library@1.0.7').projectDir = new File(rootProject.projectDir, 	'../node_modules/@paytabscom/react-native-paytabs-library@1.0.7/android')
+  	include ':react-native-paytabs-library@1.0.8'
+  	project(':react-native-paytabs-library@1.0.8').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-paytabs-library@1.0.8/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```groovy
-      compile project(':@paytabscom/react-native-paytabs-library@1.0.7')
+      compile project(':react-native-paytabs-library@1.0.8')
   	```
 
 ### Step 2:
@@ -46,7 +46,7 @@ OR Manual installation
 1. Append the following lines to `android/settings.gradle`:
   ```groovy
     include ':paytabs_sdk-v4.0.1'
-    project(':paytabs_sdk-v4.0.1').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-paytabs-library/android/paytabs_sdk-v4.0.1/')
+    project(':paytabs_sdk-v4.0.1').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-paytabs-library/android/paytabs_sdk-v4.0.1/')
   ```
 
 ## Usage
