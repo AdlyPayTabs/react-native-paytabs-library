@@ -10,13 +10,13 @@
 
 import React, { Component } from 'react';
 import {NativeEventEmitter, Platform, StyleSheet, Text, Button, View} from 'react-native';
-import PTPaytabsLibrary from 'react-native-paytabs-library';
+import RNPaytabsLibrary from 'react-native-paytabs-library';
 
 // Prepare Paypage events for IOS
-const eventPreparePaypageEmitter = new NativeEventEmitter(PTPaytabsLibrary);
+const eventPreparePaypageEmitter = new NativeEventEmitter(RNPaytabsLibrary);
 const subscription = eventPreparePaypageEmitter.addListener(
   'EventPreparePaypage',
-  (prepare) =>  PTPaytabsLibrary.log("eventPreparePaypageEmitter: " + prepare.action)
+  (prepare) =>  RNPaytabsLibrary.log("eventPreparePaypageEmitter: " + prepare.action)
 );
 
 const instructions = Platform.select({
@@ -39,43 +39,43 @@ export default class App extends Component<Props> {
   }
 
   onPressPay(){
-    PTPaytabsLibrary.start({
-      [PTPaytabsLibrary.merchant_email]: "rhegazy@paytabs.com",
-      [PTPaytabsLibrary.secret_key]: "BIueZNfPLblJnMmPYARDEoP5x1WqseI3XciX0yNLJ8v7URXTrOw6dmbKn8bQnTUk6ch6L5SudnC8fz2HozNBVZlj7w9uq4Pwg7D1",// Add your Secret Key Here
-      [PTPaytabsLibrary.transaction_title]: "Mr. John Doe",
-      [PTPaytabsLibrary.amount]: "2.0",
-      [PTPaytabsLibrary.currency_code]: "USD",
-      [PTPaytabsLibrary.customer_email]: "test@example.com",
-      [PTPaytabsLibrary.customer_phone_number]: "+97333109781",
-      [PTPaytabsLibrary.order_id]: "1234567",
-      [PTPaytabsLibrary.product_name]: "Tomato",
-      [PTPaytabsLibrary.timeout_in_seconds]: "300", //Optional
-      [PTPaytabsLibrary.address_billing]: "test test",
-      [PTPaytabsLibrary.city_billing]: "Juffair",
-      [PTPaytabsLibrary.state_billing]: "Manama",
-      [PTPaytabsLibrary.country_billing]: "BHR",
-      [PTPaytabsLibrary.postal_code_billing]: "00973", //Put Country Phone code if Postal code not available '00973'//
-      [PTPaytabsLibrary.address_shipping]: "test test",
-      [PTPaytabsLibrary.city_shipping]: "Juffair",
-      [PTPaytabsLibrary.state_shipping]: "Manama",
-      [PTPaytabsLibrary.country_shipping]: "BHR",
-      [PTPaytabsLibrary.postal_code_shipping]: "00973", //Put Country Phone code if Postal
-      [PTPaytabsLibrary.color]: "#cccccc",
-      [PTPaytabsLibrary.language]: 'en', // 'en', 'ar'
-      [PTPaytabsLibrary.tokenization]: true,
-      [PTPaytabsLibrary.preauth]: false
+    RNPaytabsLibrary.start({
+      [RNPaytabsLibrary.merchant_email]: "rhegazy@paytabs.com",
+      [RNPaytabsLibrary.secret_key]: "BIueZNfPLblJnMmPYARDEoP5x1WqseI3XciX0yNLJ8v7URXTrOw6dmbKn8bQnTUk6ch6L5SudnC8fz2HozNBVZlj7w9uq4Pwg7D1",// Add your Secret Key Here
+      [RNPaytabsLibrary.transaction_title]: "Mr. John Doe",
+      [RNPaytabsLibrary.amount]: "2.0",
+      [RNPaytabsLibrary.currency_code]: "USD",
+      [RNPaytabsLibrary.customer_email]: "test@example.com",
+      [RNPaytabsLibrary.customer_phone_number]: "+97333109781",
+      [RNPaytabsLibrary.order_id]: "1234567",
+      [RNPaytabsLibrary.product_name]: "Tomato",
+      [RNPaytabsLibrary.timeout_in_seconds]: "300", //Optional
+      [RNPaytabsLibrary.address_billing]: "test test",
+      [RNPaytabsLibrary.city_billing]: "Juffair",
+      [RNPaytabsLibrary.state_billing]: "Manama",
+      [RNPaytabsLibrary.country_billing]: "BHR",
+      [RNPaytabsLibrary.postal_code_billing]: "00973", //Put Country Phone code if Postal code not available '00973'//
+      [RNPaytabsLibrary.address_shipping]: "test test",
+      [RNPaytabsLibrary.city_shipping]: "Juffair",
+      [RNPaytabsLibrary.state_shipping]: "Manama",
+      [RNPaytabsLibrary.country_shipping]: "BHR",
+      [RNPaytabsLibrary.postal_code_shipping]: "00973", //Put Country Phone code if Postal
+      [RNPaytabsLibrary.color]: "#cccccc",
+      [RNPaytabsLibrary.language]: 'en', // 'en', 'ar'
+      [RNPaytabsLibrary.tokenization]: true,
+      [RNPaytabsLibrary.preauth]: false
     }, (response) => {
       // Callback for success & fail.
     
       // { pt_token_customer_email: '',pt_token: '',pt_token_customer_password: '', pt_transaction_id: '123456',pt_response_code: '100' }
     
-      PTPaytabsLibrary.log("on Response Payment");
+      RNPaytabsLibrary.log("on Response Payment");
       console.log(response);
       // Response Code: 100 successful otherwise fail
       if (response.pt_response_code == '100')
-        PTPaytabsLibrary.log("Transaction Id: " + response.pt_transaction_id);
+        RNPaytabsLibrary.log("Transaction Id: " + response.pt_transaction_id);
       else
-        PTPaytabsLibrary.log("Otherwise Response: " + response.pt_response_code);
+        RNPaytabsLibrary.log("Otherwise Response: " + response.pt_response_code);
       this.state = { message: response.pt_transaction_id };
     
       // Tokenization

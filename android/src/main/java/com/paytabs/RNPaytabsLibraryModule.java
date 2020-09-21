@@ -18,14 +18,14 @@ import com.paytabs.paytabs_sdk.utils.PaymentParams;
 
 import static android.app.Activity.RESULT_OK;
 
-public class PTPaytabsLibraryModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+public class RNPaytabsLibraryModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
     private final ReactApplicationContext reactContext;
     private static int PAYMENT_REQUEST_CODE = 4040;
-    private static String PAYTABS_MODULE = "PTPaytabsLibrary";
+    private static String PAYTABS_MODULE = "RNPaytabsLibrary";
     private Callback mCallback;
 
-    public PTPaytabsLibraryModule(ReactApplicationContext reactContext) {
+    public RNPaytabsLibraryModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
         this.reactContext.addActivityEventListener(this);

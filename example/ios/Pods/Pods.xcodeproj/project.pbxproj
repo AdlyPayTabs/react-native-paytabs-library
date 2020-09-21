@@ -242,6 +242,7 @@
 		110DB0771E91F52B6FD3EAD5AF30123D /* RSocketStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DF02ED4B298D01EA8A9AB455DDF137 /* RSocketStateMachine.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		115078083C0DA0161BF3687811104850 /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDA72F4F0FA758621CF93C1EBC884B9 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		11712F28C8D94966B4717571C5B4101C /* FlatCombiningPriorityQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAB9E858A12D317CCB8100B52CEF4A2 /* FlatCombiningPriorityQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1191AC00F1C144E1382BEEBDA3C83AAB /* react-native-paytabs-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE948A2F675B3714E509EED0E857D8E /* react-native-paytabs-library-dummy.m */; };
 		120EE91B70D7148A00CE2E064E96F61E /* SKApplicationDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A508F6B958A7703407CFC4E96D8F440 /* SKApplicationDescriptor.m */; settings = {COMPILER_FLAGS = "-DDEBUG=1 -DFLIPPER_OSS=1 -DFB_SONARKIT_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0"; }; };
 		1229EF9926A6D32A429E6122BF498284 /* RCTUtilsUIOverride.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A58DF1D183D72AC40CD804AD2842E9E /* RCTUtilsUIOverride.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		122F6CEBEBDF3F5FB7FC36907020D5C3 /* RCTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 47540E6CFA39C5A9A03E2109CD98E6C6 /* RCTProfile.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -268,6 +269,7 @@
 		15135A9A67B4019F2CC03E7D5FACA0FE /* RCTTypeSafety-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E0F29D56A8B820DEAAC95FFC3BC711 /* RCTTypeSafety-dummy.m */; };
 		1550DF1CAA9D5A22791A2968A908B8F9 /* RCTTextShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0DEF16F82B0BA953572BA77575AB97 /* RCTTextShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15619A9FEFEB4C7FBEB38264BCF2F170 /* SysTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 761B020B08848F7152BC1713A2075E94 /* SysTime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		156E300FF17E9CF990111CCBB48A6E4D /* RNPaytabsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = A3010EB05C4E9805E3073D250D6A43BC /* RNPaytabsLibrary.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		157804CF2C9474129EA1324545E3ACA6 /* Bits.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD12BC030A5F0F7C0EFC4F724BD19AC /* Bits.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1582870E387DA5F8D9331487BFECC860 /* RCTMultilineTextInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C77D12FDB87BAA3D4261647A6160343 /* RCTMultilineTextInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		159E6CC104E3A31FD10E4BFF4D2B6910 /* Math.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E3555D4727358F55D07C879D3B83FB /* Math.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -512,7 +514,6 @@
 		37EDEC2BDB04F892C3CB29C4F9A8C34E /* YogaKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 749138439715171DF4D505309B51A31F /* YogaKit-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		38027C8D6E961104B13DE21110F9F8ED /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 08468ECAE0AC83A09F4F97AE0E1A04FA /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		381829F9C9B382BC0EAD770066F0848B /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEFA65F4392477850187C7B84387B40 /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		382C754DFFDA1A206096524D90ADE66B /* PTPaytabsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5277B3C020A82720BB3A9A425158E36D /* PTPaytabsLibrary.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		382D1B33DF592436E96A9505F8E9E725 /* PublisherBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C95F92863D6B8C48FCEB3C5682D7F1C /* PublisherBase.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0  -frtti\n    -fexceptions\n    -std=c++14\n    -Wno-error\n    -Wno-unused-local-typedefs\n    -Wno-unused-variable\n    -Wno-sign-compare\n    -Wno-comment\n    -Wno-return-type\n    -Wno-global-constructors"; }; };
 		3857D6EC0024F96A79055E6C8D7B4F9D /* RCTInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D5B93BBC18597A26F93443AF89FA8994 /* RCTInspector.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3861A71C26628C93C77FCD87EC4761FB /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B249BD02905864D4022ACA6AAFE666 /* Memory.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1317,7 +1318,6 @@
 		A530BB82BAF0C755B99BFCE96AC93639 /* BaselinesTcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0CF4205B2F48ABE553A03A9DF857821 /* BaselinesTcp.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0  -frtti\n    -fexceptions\n    -std=c++14\n    -Wno-error\n    -Wno-unused-local-typedefs\n    -Wno-unused-variable\n    -Wno-sign-compare\n    -Wno-comment\n    -Wno-return-type\n    -Wno-global-constructors"; }; };
 		A58D961B3131B67678B39D582FF72B46 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E4E28E000613DAA6E895DAF5678FC7 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A58D964A05070A1687AEF98D527B41B3 /* GFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 9886EAAF0DC157162F6FBAA1025D40C8 /* GFlags.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A5916741126B9998D8F9DB6523CC7C0A /* react-native-paytabs-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0FEC83A865595171FE4FE77D3F654C /* react-native-paytabs-library-dummy.m */; };
 		A5A48479F57E3BB132283132DD1C384D /* RCTMultilineTextInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C77D12FDB87BAA3D4261647A6160343 /* RCTMultilineTextInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A602F94288003EADC14BAE8B862E7B77 /* ScopedEventBaseThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817C9DCA0F1B9FEF566D535263D8C2BE /* ScopedEventBaseThread.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_HAVE_PTHREAD=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0\n    -frtti\n    -fexceptions\n    -std=c++14\n    -Wno-error\n    -Wno-unused-local-typedefs\n    -Wno-unused-variable\n    -Wno-sign-compare\n    -Wno-comment\n    -Wno-return-type\n    -Wno-global-constructors"; }; };
 		A630F34EF42270DBB4F588E597EB53D7 /* RCTSurfaceHostingProxyRootView.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABBA5EF6D89B56863E9F9F3E3C5A9704 /* RCTSurfaceHostingProxyRootView.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -1711,7 +1711,6 @@
 		DAAE0E3FED2202C7C92F463A7C4BAA2E /* CertificateUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F163A1C87D8E84BE72EF166E3DA0B2F /* CertificateUtils.cpp */; settings = {COMPILER_FLAGS = "-DFLIPPER_OSS=1 -DFB_SONARKIT_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0 -Wall\n    -std=c++14\n    -Wno-global-constructors"; }; };
 		DAB782CBA723F21A9F6BAC43E18B14CF /* RCTDevSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3196D01AC2E5CBB6595AB2B7B0466 /* RCTDevSettings.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
 		DAC4A0FAF448DBD72614535BD958FB85 /* RCTVibration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22C354B9A2115512D1B720E9E70D893B /* RCTVibration.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
-		DB1FF49165A91287ED060318D9D6F1BC /* PTPaytabsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8368463EA6ACB0D668B2D4F13ED8D30C /* PTPaytabsLibrary.m */; };
 		DB23770DDD223F6F66DD3161FEED485E /* cached-powers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E48DB82842DFC115EEC28810E45CFCE /* cached-powers.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB6219C37A71EF717732C8857942A6C3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 61333C9EBB70A70BDF674DBBB5CB0ABB /* UIRefreshControl+AFNetworking.m */; };
 		DBF552A01958D5E8C5850CE6354BF35C /* MallocImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2D5959BE446CBDFFE39114E619DDA2B /* MallocImpl.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_PTHREAD=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -1801,6 +1800,7 @@
 		E5722183F164030FE25227A0B39D786B /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97AF4F3473685C682CAA63A17E7D5D35 /* String.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_PTHREAD=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		E5CA6BE2368D9A6ECD9186DFFA19C104 /* RCTRawTextShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5739AD49F94CA01454004414D29234 /* RCTRawTextShadowView.m */; };
 		E5CB5D873EE0E259DA28CBF9C8EC78DA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BFAFA65B5735FEB4759B6874DB6B91 /* AFURLSessionManager.m */; };
+		E5EBE3D07CE9B7619FA4870D9AAA9E56 /* RNPaytabsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 16606302E52384B1D58FD696DA931DA5 /* RNPaytabsLibrary.m */; };
 		E5FF1743F9D79897E8139453D5C34C92 /* AsyncPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA84A56074E052FF1BADC0A37AAEB29 /* AsyncPipe.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E60FEDB5FD08E7E014C485C9573C4358 /* BILaunchStartersFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7C9C140402710DFC20CA71B1EDD8D9 /* BILaunchStartersFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E6199C55FB01AFF4464EF93678EB2E57 /* SBJson5StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9571BC0D40F6A513B78B9605EAF6D38 /* SBJson5StreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -3767,7 +3767,6 @@
 		0D2717EA18B3E68DBBABA5D2D6D81795 /* RCTExceptionsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTExceptionsManager.h; path = React/CoreModules/RCTExceptionsManager.h; sourceTree = "<group>"; };
 		0D7AE7443C1B866A87D4DDFC7972F48D /* Fixture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fixture.h; path = rsocket/benchmarks/Fixture.h; sourceTree = "<group>"; };
 		0D8A1607135041FE25C9E573CA1D7EBC /* BitIteratorDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BitIteratorDetail.h; path = folly/container/detail/BitIteratorDetail.h; sourceTree = "<group>"; };
-		0E2777ACC83A36B705CBE3371C8B909D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		0E293A773DD66B33C58EA636A7DE800E /* ieee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ieee.h; path = "double-conversion/ieee.h"; sourceTree = "<group>"; };
 		0E2E025EDFA28CD91F631F39E19668C4 /* StreamStateMachineBase.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = StreamStateMachineBase.cpp; path = rsocket/statemachine/StreamStateMachineBase.cpp; sourceTree = "<group>"; };
 		0E32E06196540C40E41E3A6FADEDFAA2 /* RCTSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaViewManager.h; sourceTree = "<group>"; };
@@ -3840,6 +3839,7 @@
 		1638D13C36BBC86BC9E93DBCB5241B62 /* RCTProfileTrampoline-i386.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-i386.S"; sourceTree = "<group>"; };
 		164A67B8FBCC22FC742F12DAE8E38051 /* json_patch.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = json_patch.cpp; path = folly/json_patch.cpp; sourceTree = "<group>"; };
 		164AC1418B5661CC27A6B88590C4D93D /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = Mantle/extobjc/EXTScope.h; sourceTree = "<group>"; };
+		16606302E52384B1D58FD696DA931DA5 /* RNPaytabsLibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNPaytabsLibrary.m; path = ios/RNPaytabsLibrary.m; sourceTree = "<group>"; };
 		16628CAF7EBB8124E88BA0339986F72C /* PINOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationGroup.m; path = Source/PINOperationGroup.m; sourceTree = "<group>"; };
 		1664FCA50F68DD735A05418AB5FAF491 /* RCTRootViewInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewInternal.h; sourceTree = "<group>"; };
 		166B025F3012139700E1D30BC14B8AA8 /* RCTInputAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTInputAccessoryView.m; sourceTree = "<group>"; };
@@ -3965,6 +3965,7 @@
 		22EDF26503881A47DA8DF9DF7C78FB17 /* YGLayoutExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YGLayoutExtensions.swift; path = YogaKit/Source/YGLayoutExtensions.swift; sourceTree = "<group>"; };
 		22F48768C6382B25AD19EBB7A3A6ED4D /* RCTNativeAnimatedNodesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTNativeAnimatedNodesManager.h; path = Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h; sourceTree = "<group>"; };
 		22FDC8F9491F137433F4BCED6739470D /* BIObjCHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BIObjCHelpers.h; path = BIObjCHelpers/SupportingFiles/BIObjCHelpers.h; sourceTree = "<group>"; };
+		2363577ACFD94AB62E9521C32F2231DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		236442CC4E191B9D3C13972E24443098 /* IOBufQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IOBufQueue.h; path = folly/io/IOBufQueue.h; sourceTree = "<group>"; };
 		238F1568C9AE4E68955C5A83D782EBFC /* AsymmetricMemoryBarrier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = AsymmetricMemoryBarrier.cpp; path = folly/synchronization/AsymmetricMemoryBarrier.cpp; sourceTree = "<group>"; };
 		239D5545E25B4E3E96097F521447F78A /* RCTResizeMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTResizeMode.m; sourceTree = "<group>"; };
@@ -4336,7 +4337,6 @@
 		4ED5D82A465CF361CF899E92B73DB802 /* SKNamed.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = SKNamed.mm; path = iOS/Plugins/FlipperKitLayoutPlugin/FlipperKitLayoutPlugin/SKNamed.mm; sourceTree = "<group>"; };
 		4EEACC298E791F3AAD9269F23098DD5E /* FlipperKitReactPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlipperKitReactPlugin.h; path = iOS/Plugins/FlipperKitReactPlugin/FlipperKitReactPlugin/FlipperKitReactPlugin.h; sourceTree = "<group>"; };
 		4F0478A7968C445F2FEE84932182FD46 /* RCTImageURLLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImageURLLoader.h; path = Libraries/Image/RCTImageURLLoader.h; sourceTree = "<group>"; };
-		4F0FEC83A865595171FE4FE77D3F654C /* react-native-paytabs-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-paytabs-library-dummy.m"; sourceTree = "<group>"; };
 		4F55975C1BBFF2A24E38D258FA6E2505 /* SocketFastOpen.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = SocketFastOpen.cpp; path = folly/detail/SocketFastOpen.cpp; sourceTree = "<group>"; };
 		4F934EE999F197C7CB2F0AFCFA3F0CB9 /* ScheduledSingleObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScheduledSingleObserver.h; path = rsocket/internal/ScheduledSingleObserver.h; sourceTree = "<group>"; };
 		4FB943D7642C6D74B83C7E57F3C2AC54 /* FlipperRSocketResponder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = FlipperRSocketResponder.cpp; path = xplat/Flipper/FlipperRSocketResponder.cpp; sourceTree = "<group>"; };
@@ -4361,7 +4361,6 @@
 		5235F3E7A862BB55100CAEE781225A31 /* Windows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Windows.h; path = folly/portability/Windows.h; sourceTree = "<group>"; };
 		523DD800C24A5E27CE14C116AE7E8AAD /* FramedDuplexConnection.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = FramedDuplexConnection.cpp; path = rsocket/framing/FramedDuplexConnection.cpp; sourceTree = "<group>"; };
 		523EBD35F360A73EB5D7285FE95C1DBC /* ExecutorWithPriority-inl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ExecutorWithPriority-inl.h"; path = "folly/executors/ExecutorWithPriority-inl.h"; sourceTree = "<group>"; };
-		5277B3C020A82720BB3A9A425158E36D /* PTPaytabsLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPaytabsLibrary.h; path = ios/PTPaytabsLibrary.h; sourceTree = "<group>"; };
 		52BE20248C509E7C9200C1EF5881EFD5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		52CE0C6288820803EEC06D63EBB7662A /* FrameType.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = FrameType.cpp; path = rsocket/framing/FrameType.cpp; sourceTree = "<group>"; };
 		52E3BF21709576A129525868CCCFF00F /* RCTBackedTextInputDelegateAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBackedTextInputDelegateAdapter.m; sourceTree = "<group>"; };
@@ -4479,6 +4478,7 @@
 		5F5739AD49F94CA01454004414D29234 /* RCTRawTextShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRawTextShadowView.m; sourceTree = "<group>"; };
 		5F5BE796E8FB498320AFB443807858B7 /* IQKeyboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.debug.xcconfig; sourceTree = "<group>"; };
 		5F7601FD9FAFF2599C1CB23B261F0D9A /* RCTParserUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTParserUtils.h; sourceTree = "<group>"; };
+		5F83956399AE5CA8853E084DBBCA1932 /* react-native-paytabs-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-paytabs-library.release.xcconfig"; sourceTree = "<group>"; };
 		5FB78296F2390B52C495C5B9DB588518 /* log.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = log.cpp; path = yoga/log.cpp; sourceTree = "<group>"; };
 		5FD476282319132FD4B76D8505BC3E50 /* RCTScrollViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollViewManager.h; sourceTree = "<group>"; };
 		5FDB334E4B97B7760E0B60403E015FBE /* RCTInvalidating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInvalidating.h; sourceTree = "<group>"; };
@@ -4748,7 +4748,6 @@
 		7C7E2DA123F0CF0858CBA15CE871B7DB /* JSCExecutorFactory.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = JSCExecutorFactory.mm; sourceTree = "<group>"; };
 		7C902FC271E13A26C841D4E897F5923F /* RCTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTConstants.m; sourceTree = "<group>"; };
 		7C9216A952A54C5FE89FF3EAE6EADCA1 /* RCTAlertManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTAlertManager.mm; sourceTree = "<group>"; };
-		7C949C05FFC5F885F4B998DDBA3215D3 /* react-native-paytabs-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-paytabs-library.release.xcconfig"; sourceTree = "<group>"; };
 		7C94E009A910B885C9A509C7E5098202 /* DiscriminatedPtr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiscriminatedPtr.h; path = folly/DiscriminatedPtr.h; sourceTree = "<group>"; };
 		7C9B00FC398402A0CD74EDF5CC15D436 /* EnvUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EnvUtil.h; path = folly/experimental/EnvUtil.h; sourceTree = "<group>"; };
 		7C9F130940F76EE9882491EB720DE133 /* Framer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Framer.cpp; path = rsocket/framing/Framer.cpp; sourceTree = "<group>"; };
@@ -4787,6 +4786,7 @@
 		808E0CD727400D98184824754590BF0C /* JSIndexedRAMBundle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = JSIndexedRAMBundle.cpp; sourceTree = "<group>"; };
 		809FAD67A7C3641AC01D7D5B6945FD57 /* SKNamed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKNamed.h; path = iOS/Plugins/FlipperKitLayoutPlugin/FlipperKitLayoutPlugin/SKNamed.h; sourceTree = "<group>"; };
 		80F4E87C66FA11DF4806030BBE037025 /* ResumeIdentificationToken.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ResumeIdentificationToken.cpp; path = rsocket/framing/ResumeIdentificationToken.cpp; sourceTree = "<group>"; };
+		81220AEDEA6A86689098D22D7AB7DD4A /* react-native-paytabs-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-paytabs-library.debug.xcconfig"; sourceTree = "<group>"; };
 		812C07EE5077B960A1AE9045108635B1 /* RCTTurboModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTurboModuleManager.h; sourceTree = "<group>"; };
 		81554249322335A4634480EE90CB5598 /* RCTDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDecayAnimation.h; sourceTree = "<group>"; };
 		816AC2973F7F72BAC1DD9B0CC1DC2E62 /* RCTDevLoadingView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTDevLoadingView.mm; sourceTree = "<group>"; };
@@ -4814,7 +4814,6 @@
 		82F2574F2265D5FB98292E5FBF5FDC5A /* PriorityUnboundedBlockingQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PriorityUnboundedBlockingQueue.h; path = folly/executors/task_queue/PriorityUnboundedBlockingQueue.h; sourceTree = "<group>"; };
 		833F2A5EB6BDCD3F47DBD7153B67B301 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = ios/include/openssl/dsa.h; sourceTree = "<group>"; };
 		8359B8236461C4BBE024CE1ADDF0DE78 /* React-RCTLinking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "React-RCTLinking-prefix.pch"; sourceTree = "<group>"; };
-		8368463EA6ACB0D668B2D4F13ED8D30C /* PTPaytabsLibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPaytabsLibrary.m; path = ios/PTPaytabsLibrary.m; sourceTree = "<group>"; };
 		83A90F3B7ECED0E60D3A1412607A9027 /* CxxNativeModule.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = CxxNativeModule.cpp; sourceTree = "<group>"; };
 		83AC8E46B558F51FF87142AD5BA5A2EB /* BIOperationNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BIOperationNotifier.h; path = BIObjCHelpers/Operations/BIOperationNotifier.h; sourceTree = "<group>"; };
 		83D662B95E1CB3AB7DD6549164A637C8 /* ReactCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactCommon-dummy.m"; sourceTree = "<group>"; };
@@ -4860,6 +4859,7 @@
 		89A83C706A36FB4EF8A245A491B79A0F /* RCTNativeModule.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTNativeModule.mm; sourceTree = "<group>"; };
 		89B249BD02905864D4022ACA6AAFE666 /* Memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Memory.h; path = folly/portability/Memory.h; sourceTree = "<group>"; };
 		89C28E7870459ED47B1BDB1E463C249F /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = ios/include/openssl/bio.h; sourceTree = "<group>"; };
+		89EA537459DED715CF73A9840D354787 /* react-native-paytabs-library.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-paytabs-library.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		89F98F82BC092326A023A4B4746EE9C6 /* React-RCTActionSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "React-RCTActionSheet.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		89FC33885DF79DD1B8EBC71D2BE4B26D /* GroupVarint.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = GroupVarint.cpp; path = folly/GroupVarint.cpp; sourceTree = "<group>"; };
 		89FDBDE32E22A199EB838BF9393B1638 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
@@ -5074,6 +5074,7 @@
 		A2C6AD73177E12CCA42951D871AB5C36 /* NetOps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NetOps.h; path = folly/net/NetOps.h; sourceTree = "<group>"; };
 		A2F83FDDD380BAC0388515B91B09CC30 /* OpenSSLPtrTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenSSLPtrTypes.h; path = folly/ssl/OpenSSLPtrTypes.h; sourceTree = "<group>"; };
 		A2FA351FB8384715C63C65D9A33F1521 /* RangeSse42.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = RangeSse42.cpp; path = folly/detail/RangeSse42.cpp; sourceTree = "<group>"; };
+		A3010EB05C4E9805E3073D250D6A43BC /* RNPaytabsLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNPaytabsLibrary.h; path = ios/RNPaytabsLibrary.h; sourceTree = "<group>"; };
 		A30EC2B39671A01E3FA30075B554CE5D /* SBJson5Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Writer.m; path = Classes/SBJson5Writer.m; sourceTree = "<group>"; };
 		A38236A0B04026C5E1B48B3BC51F44F7 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A388EEF0A3397124C679E774682E0392 /* thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thread.h; path = src/event2/thread.h; sourceTree = "<group>"; };
@@ -5307,7 +5308,6 @@
 		BDB8EB08964A06CC8B9E99AA5BB1EFEF /* RCTJSStackFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTJSStackFrame.m; sourceTree = "<group>"; };
 		BDBCE1DD1436445E1897C178B7679A18 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
 		BE066A7BCEA7A8021FCB2272614965C6 /* raw_logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = raw_logging.h; path = src/glog/raw_logging.h; sourceTree = "<group>"; };
-		BE2139C0DB8DB6277C696F0DF5C801FE /* react-native-paytabs-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-paytabs-library-prefix.pch"; sourceTree = "<group>"; };
 		BE2214E8D69FACEE34A84FBD09AAE8EB /* CoreModulesPlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreModulesPlugins.h; path = React/CoreModules/CoreModulesPlugins.h; sourceTree = "<group>"; };
 		BE2BB57E6E8B3D526B6FD43CD91F7317 /* GroupVarintDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GroupVarintDetail.h; path = folly/detail/GroupVarintDetail.h; sourceTree = "<group>"; };
 		BE494DA0716BDCC43EBB48C90177FA71 /* demangle.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = demangle.cc; path = src/demangle.cc; sourceTree = "<group>"; };
@@ -5412,7 +5412,6 @@
 		CA46E8BF0E81D33BCB1954AB45ADE083 /* RCTAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAnimatedNode.m; sourceTree = "<group>"; };
 		CA47A76BF166A1092643A4FCDBBC0C4F /* RCTUtilsUIOverride.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUtilsUIOverride.m; sourceTree = "<group>"; };
 		CA550B53EC90C78B6D9DCACE4ADD4931 /* dns_struct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dns_struct.h; path = src/event2/dns_struct.h; sourceTree = "<group>"; };
-		CA5BEBADE2FEE34B195EECB04D757DBF /* react-native-paytabs-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-paytabs-library.debug.xcconfig"; sourceTree = "<group>"; };
 		CAA03EE6EA34E184045A1E46F087ED07 /* React-RCTLinking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "React-RCTLinking.debug.xcconfig"; sourceTree = "<group>"; };
 		CABE2839CAF4C0A207365B7F00C1D60D /* BIStartersFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BIStartersFactory.m; path = BIObjCHelpers/Starters/BIStartersFactory.m; sourceTree = "<group>"; };
 		CAD1A03DA4B4AF41B0E96A09E856218B /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = ios/include/openssl/camellia.h; sourceTree = "<group>"; };
@@ -5464,6 +5463,7 @@
 		CF84AC13D3B89D74DC25BDFC2DD74107 /* React.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = React.debug.xcconfig; sourceTree = "<group>"; };
 		CFF691DA9EEF2A4D61722BC39A03B8C5 /* AtomicUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicUtil.h; path = folly/synchronization/AtomicUtil.h; sourceTree = "<group>"; };
 		D000B96BE7706A71E54376260E8D5AED /* IOThreadPoolExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IOThreadPoolExecutor.h; path = folly/executors/IOThreadPoolExecutor.h; sourceTree = "<group>"; };
+		D036E0797FB8FB46C3BEC83D526DC371 /* react-native-paytabs-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-paytabs-library-prefix.pch"; sourceTree = "<group>"; };
 		D0667453513E28EFDDC00BB4B5EA7C25 /* BILaunchStartersFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BILaunchStartersFactory.m; path = BIObjCHelpers/Starters/BILaunchStartersFactory.m; sourceTree = "<group>"; };
 		D0892AF10CEABC129C30C58373572820 /* RCTSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaShadowView.m; sourceTree = "<group>"; };
 		D0AD263D392F4E38FBCDF76BAB6F7011 /* ManualExecutor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ManualExecutor.cpp; path = folly/executors/ManualExecutor.cpp; sourceTree = "<group>"; };
@@ -5701,6 +5701,7 @@
 		EBC69526C4D8323E61716A2DD12D871B /* threadsafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = threadsafe.h; sourceTree = "<group>"; };
 		EBD74238B43C3804AB8920542CEB99C1 /* PriorityLifoSemMPMCQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PriorityLifoSemMPMCQueue.h; path = folly/executors/task_queue/PriorityLifoSemMPMCQueue.h; sourceTree = "<group>"; };
 		EBE947BD6EB65EA46F6623167FEAF844 /* NSString+BIExtra.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BIExtra.m"; path = "BIObjCHelpers/Categories/NSString/NSString+BIExtra.m"; sourceTree = "<group>"; };
+		EBE948A2F675B3714E509EED0E857D8E /* react-native-paytabs-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-paytabs-library-dummy.m"; sourceTree = "<group>"; };
 		EC4838CCF23196846870EBB99258E710 /* RCTAppState.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTAppState.mm; sourceTree = "<group>"; };
 		EC66530004B9DD4AD6B4920FDBCD6A56 /* Shell.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Shell.cpp; path = folly/system/Shell.cpp; sourceTree = "<group>"; };
 		EC8A9E7ED75E073DF169E783367B17B8 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = ios/include/openssl/stack.h; sourceTree = "<group>"; };
@@ -5710,7 +5711,6 @@
 		ECE2A392ED7DC48B4296BB8168E6C713 /* StreamRequester.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StreamRequester.h; path = rsocket/statemachine/StreamRequester.h; sourceTree = "<group>"; };
 		ECF529C6C4DA4805ECC878A3111073A8 /* cached-powers.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = "cached-powers.cc"; path = "double-conversion/cached-powers.cc"; sourceTree = "<group>"; };
 		ED4A6349A447A40B1B22F78FD144B2E7 /* FlipperPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlipperPlugin.h; path = xplat/Flipper/FlipperPlugin.h; sourceTree = "<group>"; };
-		ED6748FFC7AC3280AB16D585F9F30C5A /* react-native-paytabs-library.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-paytabs-library.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED9D29194E46A9B5775090DCC0A7346C /* RCTI18nUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTI18nUtil.h; sourceTree = "<group>"; };
 		EDACF1DA180FCBE8362580DC637B7E7B /* ResumeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ResumeManager.h; path = rsocket/ResumeManager.h; sourceTree = "<group>"; };
 		EDB3E208FEA8579FFA0E4AC988BB6895 /* SSLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLSession.h; path = folly/ssl/SSLSession.h; sourceTree = "<group>"; };
@@ -6694,6 +6694,18 @@
 			name = RCTWebSocket;
 			sourceTree = "<group>";
 		};
+		294830551E76884D5C564F5C5C4904FF /* react-native-paytabs-library */ = {
+			isa = PBXGroup;
+			children = (
+				A3010EB05C4E9805E3073D250D6A43BC /* RNPaytabsLibrary.h */,
+				16606302E52384B1D58FD696DA931DA5 /* RNPaytabsLibrary.m */,
+				F78D5E27F354DEE7C65D8E167DFCB740 /* Pod */,
+				372E4C3111355B63F413B9409B3EC3C3 /* Support Files */,
+			);
+			name = "react-native-paytabs-library";
+			path = ../../..;
+			sourceTree = "<group>";
+		};
 		29ED7D49952106D241C6FA8F755467AE /* BIObjCHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -6947,6 +6959,18 @@
 				9666F8AA9D62BBF52DBD9627325C25CD /* WKWebView+AFNetworking.m */,
 			);
 			name = UIKit;
+			sourceTree = "<group>";
+		};
+		372E4C3111355B63F413B9409B3EC3C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBE948A2F675B3714E509EED0E857D8E /* react-native-paytabs-library-dummy.m */,
+				D036E0797FB8FB46C3BEC83D526DC371 /* react-native-paytabs-library-prefix.pch */,
+				81220AEDEA6A86689098D22D7AB7DD4A /* react-native-paytabs-library.debug.xcconfig */,
+				5F83956399AE5CA8853E084DBBCA1932 /* react-native-paytabs-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "example/ios/Pods/Target Support Files/react-native-paytabs-library";
 			sourceTree = "<group>";
 		};
 		37C630BF3BF48BEC7242CBFB99BD06B1 /* Drivers */ = {
@@ -7789,18 +7813,6 @@
 			path = "../../../../ios/Pods/Target Support Files/RCTTypeSafety";
 			sourceTree = "<group>";
 		};
-		80ED37DFDE3447D53C66BF4062890147 /* react-native-paytabs-library */ = {
-			isa = PBXGroup;
-			children = (
-				5277B3C020A82720BB3A9A425158E36D /* PTPaytabsLibrary.h */,
-				8368463EA6ACB0D668B2D4F13ED8D30C /* PTPaytabsLibrary.m */,
-				C28EAC775B185713768E58B4B90458F1 /* Pod */,
-				88C1CEE5C31CB0E40300045BF5C1034A /* Support Files */,
-			);
-			name = "react-native-paytabs-library";
-			path = ../../..;
-			sourceTree = "<group>";
-		};
 		812A55CFED169F259216A0497F7674D8 /* React-RCTText */ = {
 			isa = PBXGroup;
 			children = (
@@ -8029,18 +8041,6 @@
 			);
 			name = IQKeyboardManager;
 			path = IQKeyboardManager;
-			sourceTree = "<group>";
-		};
-		88C1CEE5C31CB0E40300045BF5C1034A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F0FEC83A865595171FE4FE77D3F654C /* react-native-paytabs-library-dummy.m */,
-				BE2139C0DB8DB6277C696F0DF5C801FE /* react-native-paytabs-library-prefix.pch */,
-				CA5BEBADE2FEE34B195EECB04D757DBF /* react-native-paytabs-library.debug.xcconfig */,
-				7C949C05FFC5F885F4B998DDBA3215D3 /* react-native-paytabs-library.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "example/ios/Pods/Target Support Files/react-native-paytabs-library";
 			sourceTree = "<group>";
 		};
 		89952C98A80CE0BE94978E92DCAE8C27 /* FlipperKitHighlightOverlay */ = {
@@ -9639,15 +9639,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C28EAC775B185713768E58B4B90458F1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				ED6748FFC7AC3280AB16D585F9F30C5A /* react-native-paytabs-library.podspec */,
-				0E2777ACC83A36B705CBE3371C8B909D /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		C5541787F2DE241CADF403870E61A624 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -10205,6 +10196,15 @@
 			path = "../../../../ios/Pods/Target Support Files/React-RCTSettings";
 			sourceTree = "<group>";
 		};
+		F78D5E27F354DEE7C65D8E167DFCB740 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				89EA537459DED715CF73A9840D354787 /* react-native-paytabs-library.podspec */,
+				2363577ACFD94AB62E9521C32F2231DD /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		F8ECE1A2D9A07B41D46D0D6B1614D617 /* BaseText */ = {
 			isa = PBXGroup;
 			children = (
@@ -10249,7 +10249,7 @@
 				48A830FD7609FA114F003C562B1CC15A /* React-jsi */,
 				508FC83EDFDD7EBFF543606154BA0667 /* React-jsiexecutor */,
 				0CA92E14E5943681ED529D9CEB6712F4 /* React-jsinspector */,
-				80ED37DFDE3447D53C66BF4062890147 /* react-native-paytabs-library */,
+				294830551E76884D5C564F5C5C4904FF /* react-native-paytabs-library */,
 				60AA5F026FAC3F6D950F2B2946231F4E /* React-RCTActionSheet */,
 				F20B99958FD2FF3E6823A51B4721F9EB /* React-RCTAnimation */,
 				1DC7DD83578ADE79F84751AE51DD44E2 /* React-RCTBlob */,
@@ -10938,6 +10938,14 @@
 				3ED7934F9907EBE0C00D4E00CF9B282A /* RCTWrapperViewController.h in Headers */,
 				07B183FE2D2696051EAFF7FB679B7F89 /* UIView+Private.h in Headers */,
 				14D3D3B9291061B66C9FF5BE953CB4A2 /* UIView+React.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A65E86A3A7C543B3B41948EF0F3B1766 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156E300FF17E9CF990111CCBB48A6E4D /* RNPaytabsLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11774,14 +11782,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAEF8A1B9CB58B0E13531A094BE2E019 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				382C754DFFDA1A206096524D90ADE66B /* PTPaytabsLibrary.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -11962,8 +11962,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEE0E43A93E829741A8140D4BD857B93 /* Build configuration list for PBXNativeTarget "react-native-paytabs-library" */;
 			buildPhases = (
-				FAEF8A1B9CB58B0E13531A094BE2E019 /* Headers */,
-				68E647F4662B116A754695A987132A10 /* Sources */,
+				A65E86A3A7C543B3B41948EF0F3B1766 /* Headers */,
+				E9681F6CFA254261173B896DFC6613FA /* Sources */,
 				F3D364C443FA8E1AC7C7D2973FFE3915 /* Frameworks */,
 			);
 			buildRules = (
@@ -13537,15 +13537,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68E647F4662B116A754695A987132A10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB1FF49165A91287ED060318D9D6F1BC /* PTPaytabsLibrary.m in Sources */,
-				A5916741126B9998D8F9DB6523CC7C0A /* react-native-paytabs-library-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		739C46D1FB9A58B5F6DF5001758C264C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -13896,6 +13887,15 @@
 				398B07F0E0AC4AA8EC4AF1C63DCE728C /* RAMBundleRegistry.cpp in Sources */,
 				440C7B1EDCD1A89674D97FEC95DC45E5 /* React-cxxreact-dummy.m in Sources */,
 				0096392F77FDB42899D07B0B2F1E5C8E /* ReactMarker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9681F6CFA254261173B896DFC6613FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1191AC00F1C144E1382BEEBDA3C83AAB /* react-native-paytabs-library-dummy.m in Sources */,
+				E5EBE3D07CE9B7619FA4870D9AAA9E56 /* RNPaytabsLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -16898,7 +16898,7 @@
 		};
 		925A8E4D664FB4243D2A8CE6D1C75825 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA5BEBADE2FEE34B195EECB04D757DBF /* react-native-paytabs-library.debug.xcconfig */;
+			baseConfigurationReference = 81220AEDEA6A86689098D22D7AB7DD4A /* react-native-paytabs-library.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -17442,7 +17442,7 @@
 		};
 		BA61117275965A010B39E78FB0AA72A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C949C05FFC5F885F4B998DDBA3215D3 /* react-native-paytabs-library.release.xcconfig */;
+			baseConfigurationReference = 5F83956399AE5CA8853E084DBBCA1932 /* react-native-paytabs-library.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

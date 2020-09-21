@@ -1,9 +1,9 @@
-#import "PTPaytabsLibrary.h"
+#import "RNPaytabsLibrary.h"
 #import <React/RCTLog.h>
 #import <UIKit/UIKit.h>
 #import <paytabs-iOS/paytabs_iOS.h>
 
-@implementation PTPaytabsLibrary
+@implementation RNPaytabsLibrary
 
 RCT_EXPORT_MODULE()
 

@@ -1,6 +1,6 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 
-@interface PTPaytabsLibrary : RCTEventEmitter <RCTBridgeModule>
+@interface RNPaytabsLibrary : RCTEventEmitter <RCTBridgeModule>
 
 @end
