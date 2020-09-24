@@ -48,31 +48,65 @@ RCT_EXPORT_METHOD(start:(NSDictionary *)paymentDetails withCallBack:(RCTResponse
          // Finish Prepare Payment Page
          [self sendEventWithName:@"EventPreparePaypage" body:@{@"action": @"finish"}];
      };
-
-     view.didReceiveFinishTransactionCallback = ^(int responseCode, NSString *  result, int transactionID, NSString *  tokenizedCustomerEmail, NSString * tokenizedCustomerPassword, NSString * _Nonnull token, BOOL transactionState) {
-       if (tokenizedCustomerEmail != nil) {
-         callback(@[@{
-                        @"pt_response_code":[NSString stringWithFormat:@"%i", responseCode],
-                        @"pt_transaction_id":[NSString stringWithFormat:@"%i", transactionID],
-                        @"pt_token_customer_email":tokenizedCustomerEmail,
-                        @"pt_token_customer_password":tokenizedCustomerPassword,
-                        @"pt_token":token
-                        }]);
-       }else{
-         callback(@[@{
-                        @"pt_response_code":[NSString stringWithFormat:@"%i", responseCode],
-                        @"pt_transaction_id":[NSString stringWithFormat:@"%i", transactionID],
-                        @"pt_token_customer_email":@"",
-                        @"pt_token_customer_password":@"",
-                        @"pt_token":@""
-                        }]);
-       }
-       [rootViewController dismissViewControllerAnimated:NO completion:nil];
-       [rootViewController.view removeFromSuperview];
-       [rootViewController removeFromParentViewController];
+    
+    view.didReceiveFinishTransactionCallback = ^(int responseCode, NSString *  result, int transactionID, NSString *  tokenizedCustomerEmail, NSString * tokenizedCustomerPassword, NSString * _Nonnull token, BOOL transactionState, NSString *statementReference, NSString *traceCode) {
+        callback(@[@{ @"pt_response_code":[NSString stringWithFormat:@"%i", responseCode],
+                      @"pt_transaction_id":[NSString stringWithFormat:@"%i", transactionID],
+                      @"pt_token_customer_email": tokenizedCustomerEmail ? tokenizedCustomerEmail : @"",
+                      @"pt_token_customer_password": tokenizedCustomerEmail ? tokenizedCustomerPassword : @"",
+                      @"pt_token": tokenizedCustomerEmail ? token : @"",
+                      @"pt_statement_reference": statementReference ? statementReference : @"",
+                      @"pt_trace_code": traceCode ? traceCode : @""
+        }]);
+        [rootViewController dismissViewControllerAnimated:NO completion:nil];
+        [rootViewController.view removeFromSuperview];
+        [rootViewController removeFromParentViewController];
      };
 
      [rootViewController presentViewController:view animated:true completion:nil];
+}
+
+RCT_EXPORT_METHOD(startApplePay:(NSDictionary *)paymentDetails withCallBack:(RCTResponseSenderBlock) callback)
+{
+   NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"Resources" withExtension:@"bundle"]];
+    UIViewController *rootViewController = [[[[UIApplication sharedApplication]delegate] window] rootViewController];
+    PTFWInitialSetupViewController *viewController =  [[PTFWInitialSetupViewController alloc] initApplePayWithBundle:bundle andWithViewFrame:rootViewController.view.frame andWithAmount:[[paymentDetails valueForKey:@"pt_amount"] intValue] andWithCustomerTitle:[paymentDetails valueForKey:@"pt_transaction_title"] andWithCurrencyCode:[paymentDetails valueForKey:@"pt_currency_code"] andWithCountryCode:[paymentDetails valueForKey:@"pt_country_code"] andWithSDKLanguage:[paymentDetails valueForKey:@"pt_language"] andWithOrderID:[paymentDetails valueForKey:@"pt_order_id"] andIsTokenization:[[paymentDetails valueForKey:@"pt_tokenization"] boolValue] andIsPreAuth:[[paymentDetails valueForKey:@"pt_preauth"] boolValue] andWithMerchantEmail:[paymentDetails valueForKey:@"pt_merchant_email"] andWithMerchantSecretKey:[paymentDetails valueForKey:@"pt_secret_key"] andWithMerchantApplePayIdentifier:[paymentDetails valueForKey:@"pt_merchant_identifier"] andWithSupportedNetworks:@[PKPaymentNetworkVisa, PKPaymentNetworkMasterCard, PKPaymentNetworkAmex] andWithAssigneeCode:@"SDK"];
+    
+    viewController.didReceiveBackButtonCallback = ^{
+        UIViewController *rootViewController = [[[[UIApplication sharedApplication]delegate] window] rootViewController];
+        [rootViewController dismissViewControllerAnimated:YES completion:nil];
+    };
+
+     viewController.didReceiveBackButtonCallback = ^{
+         UIViewController *rootViewController = [[[[UIApplication sharedApplication]delegate] window] rootViewController];
+         [rootViewController dismissViewControllerAnimated:YES completion:nil];
+     };
+
+     viewController.didStartPreparePaymentPage = ^{
+         // Start Prepare Payment Page
+         [self sendEventWithName:@"EventPreparePaypage" body:@{@"action": @"start"}];
+     };
+
+     viewController.didFinishPreparePaymentPage = ^{
+         // Finish Prepare Payment Page
+         [self sendEventWithName:@"EventPreparePaypage" body:@{@"action": @"finish"}];
+     };
+    
+    viewController.didReceiveFinishTransactionCallback = ^(int responseCode, NSString *  result, int transactionID, NSString *  tokenizedCustomerEmail, NSString * tokenizedCustomerPassword, NSString * _Nonnull token, BOOL transactionState, NSString *statementReference, NSString *traceCode) {
+        callback(@[@{ @"pt_response_code":[NSString stringWithFormat:@"%i", responseCode],
+                      @"pt_transaction_id":[NSString stringWithFormat:@"%i", transactionID],
+                      @"pt_token_customer_email": tokenizedCustomerEmail ? tokenizedCustomerEmail : @"",
+                      @"pt_token_customer_password": tokenizedCustomerEmail ? tokenizedCustomerPassword : @"",
+                      @"pt_token": tokenizedCustomerEmail ? token : @"",
+                      @"pt_statement_reference": statementReference ? statementReference : @"",
+                      @"pt_trace_code": traceCode ? traceCode : @""
+        }]);
+        [rootViewController dismissViewControllerAnimated:NO completion:nil];
+        [rootViewController.view removeFromSuperview];
+        [rootViewController removeFromParentViewController];
+     };
+
+     [rootViewController presentViewController:viewController animated:true completion:nil];
 }
 
 - (UIColor *)colorWithHexString:(NSString *)hexString {

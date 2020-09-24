@@ -28,5 +28,6 @@ RNPaytabsLibrary.theme_light = 'pt_theme_light';
 RNPaytabsLibrary.language = 'pt_language';
 RNPaytabsLibrary.tokenization = 'pt_tokenization';
 RNPaytabsLibrary.preauth = 'pt_preauth';
-
+RNPaytabsLibrary.merchant_identifier = 'pt_merchant_identifier';
+RNPaytabsLibrary.country_code = 'pt_country_code';
 export default RNPaytabsLibrary;

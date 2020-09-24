@@ -40,13 +40,13 @@ export default class App extends Component<Props> {
 
   onPressPay(){
     RNPaytabsLibrary.start({
-      [RNPaytabsLibrary.merchant_email]: "rhegazy@paytabs.com",
-      [RNPaytabsLibrary.secret_key]: "BIueZNfPLblJnMmPYARDEoP5x1WqseI3XciX0yNLJ8v7URXTrOw6dmbKn8bQnTUk6ch6L5SudnC8fz2HozNBVZlj7w9uq4Pwg7D1",// Add your Secret Key Here
+      [RNPaytabsLibrary.merchant_email]: "test@exampe.com",
+      [RNPaytabsLibrary.secret_key]: "kuTEjyEMhpVSWTwXSSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp",// Add your Secret Key Here
       [RNPaytabsLibrary.transaction_title]: "Mr. John Doe",
       [RNPaytabsLibrary.amount]: "2.0",
       [RNPaytabsLibrary.currency_code]: "USD",
-      [RNPaytabsLibrary.customer_email]: "test@example.com",
-      [RNPaytabsLibrary.customer_phone_number]: "+97333109781",
+      [RNPaytabsLibrary.customer_email]: "test@exampe.com",
+      [RNPaytabsLibrary.customer_phone_number]: "+973000000",
       [RNPaytabsLibrary.order_id]: "1234567",
       [RNPaytabsLibrary.product_name]: "Tomato",
       [RNPaytabsLibrary.timeout_in_seconds]: "300", //Optional
@@ -65,10 +65,6 @@ export default class App extends Component<Props> {
       [RNPaytabsLibrary.tokenization]: true,
       [RNPaytabsLibrary.preauth]: false
     }, (response) => {
-      // Callback for success & fail.
-    
-      // { pt_token_customer_email: '',pt_token: '',pt_token_customer_password: '', pt_transaction_id: '123456',pt_response_code: '100' }
-    
       RNPaytabsLibrary.log("on Response Payment");
       console.log(response);
       // Response Code: 100 successful otherwise fail
@@ -77,12 +73,41 @@ export default class App extends Component<Props> {
       else
         RNPaytabsLibrary.log("Otherwise Response: " + response.pt_response_code);
       this.state = { message: response.pt_transaction_id };
-    
       // Tokenization
       //RNPaytabs.log(response.pt_token_customer_email);
       //RNPaytabs.log(response.pt_token_customer_password);
       //RNPaytabs.log(response.pt_token);
       
+    });
+  }
+  onPressApplePay(){
+    var args = {
+      [RNPaytabsLibrary.merchant_email]: "test@exampe.com",
+      [RNPaytabsLibrary.secret_key]: "kuTEjyEMhpVSSSwXBSOSeiiDAeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp",// Add your Secret Key Here
+      [RNPaytabsLibrary.transaction_title]: "Mr. John Doe",
+      [RNPaytabsLibrary.amount]: "2.0",
+      [RNPaytabsLibrary.currency_code]: "AED",
+      [RNPaytabsLibrary.customer_email]: "test@exampe.com",
+      [RNPaytabsLibrary.order_id]: "1234567",
+      [RNPaytabsLibrary.country_code]: "AE",
+      [RNPaytabsLibrary.language]: 'en',
+      [RNPaytabsLibrary.preauth]: false,
+      [RNPaytabsLibrary.merchant_identifier]: 'merchant.bundleId',
+      [RNPaytabsLibrary.tokenization]: true
+    };
+    RNPaytabsLibrary.startApplePay(args, (response) => {
+      RNPaytabsLibrary.log("on Response Payment");
+      console.log(response);
+      // Response Code: 100 successful otherwise fail
+      if (response.pt_response_code == '100')
+        RNPaytabsLibrary.log("Transaction Id: " + response.pt_transaction_id);
+      else
+        RNPaytabsLibrary.log("Otherwise Response: " + response.pt_response_code);
+      this.state = { message: response.pt_transaction_id };
+      // Tokenization
+      //RNPaytabs.log(response.pt_token_customer_email);
+      //RNPaytabs.log(response.pt_token_customer_password);
+      //RNPaytabs.log(response.pt_token);
     });
   }
   render() {
@@ -94,7 +119,12 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{this.state.message}</Text>
         <Button
             onPress={this.onPressPay}
-            title="Pay now"
+            title="Pay with PayTabs"
+            color="#c00"
+          />
+        <Button
+            onPress={this.onPressApplePay}
+            title="Pay with Apple Pay"
             color="#c00"
           />
       </View>

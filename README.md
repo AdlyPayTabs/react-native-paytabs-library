@@ -1,6 +1,6 @@
 
 # react-native-paytabs-library
-![Version](https://img.shields.io/badge/Paytabs%20React%20Native%20library-v1.0.8-green)
+![Version](https://img.shields.io/badge/Paytabs%20React%20Native%20library-v1.1.0-green)
 
 React native paytabs library is a wrapper for the native PayTabs Android and iOS SDKs, It helps you integrate with PayTabs payment gateway.
 
@@ -8,20 +8,20 @@ Flutter support:
 * [x] iOS
 * [x] Android
 
-## Usage
-
 # Installation
 
 `$ npm install @paytabscom/react-native-paytabs-library@1.0.8 --save`
 
 ## Usage
 
-1. Import `react-native-paytabs-library`
+Import `react-native-paytabs-library`
 
 ```javascript
 import RNPaytabsLibrary from '@paytabscom/react-native-paytabs-library';
 ```
-2. Configure arguments
+
+### Pay with PayTabs
+1. Configure arguments
 
 ```javascript
 var args = {
@@ -52,10 +52,42 @@ var args = {
 }
 ```
 
-3. Start calling payment method and handle the transaction details
+2. Start payment by calling `start` method and handle the transaction details
 
 ```javascript
 RNPaytabsLibrary.start(args, (response) => {
+  // Response Code: 100 successful otherwise fail
+  if (response.pt_response_code == '100')
+    RNPaytabsLibrary.log("Transaction Id: " + response.pt_transaction_id);
+  else
+    RNPaytabsLibrary.log("Otherwise Response: " + response.pt_response_code);
+});
+```
+
+### Pay with Apple Pay
+1. Configure arguments
+
+```javascript
+var args = {
+[RNPaytabsLibrary.merchant_email]: "test@example.com",
+  [RNPaytabsLibrary.secret_key]: "kuTEjyEMhpVSWTwXBSOSeiiSSeMCOdyeuFZKiXAlhzjSKqswUWAgbCaYFivjvYzCWaWJbRszhjZuEQqsUycVzLSyMIaZiQLlRqlp",// Add your Secret Key Here
+  [RNPaytabsLibrary.transaction_title]: "Mr. John Doe",
+  [RNPaytabsLibrary.amount]: "2.0",
+  [RNPaytabsLibrary.currency_code]: "AED",
+  [RNPaytabsLibrary.customer_email]: "test@example.com",
+  [RNPaytabsLibrary.order_id]: "1234567",
+  [RNPaytabsLibrary.country_code]: "AE",
+  [RNPaytabsLibrary.language]: 'en',
+  [RNPaytabsLibrary.preauth]: false,
+  [RNPaytabsLibrary.merchant_identifier]: 'merchant.bundleId',
+  [RNPaytabsLibrary.tokenization]: true
+}
+```
+
+2. Start payment by calling `startApplePay` method and handle the transaction details
+
+```javascript
+RNPaytabsLibrary.startApplePay(args, (response) => {
   // Response Code: 100 successful otherwise fail
   if (response.pt_response_code == '100')
     RNPaytabsLibrary.log("Transaction Id: " + response.pt_transaction_id);
